@@ -1,0 +1,70 @@
+/*ESTILOS EDITAR ELIMINAR*/
+
+.contenedor_eliminar_editar .contenedor_editar .editar{
+    width: 70px;
+    background: darkorange;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+.contenedor_editar .editar{
+    color: white;
+    
+}
+
+.contenedor_eliminar_editar .contenedor_eliminar .eliminar {
+    width: 70px;
+    background: red;
+    text-align: center;
+    font-size: 15px;
+}
+
+.contenedor_eliminar .eliminar {
+    color: white;
+}
+
+/*ESTILO PARA EL PAGINADO*/
+
+#pagination {
+    background: rgba(0,0,0,0.3);
+    box-shadow: 0 0 5px 5px;
+    width: 97%;
+    max-width: 1300px;
+    height: 30px;
+
+    margin: auto;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#pagination ul li a {
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+}
+
+#pagination ul li a:hover {
+    text-decoration: underline;
+}
+
+#pagination ul {
+    list-style: none;
+}
+
+/*-------------PAGINADO-----------*/
+
+.paginado center a {
+    text-decoration: none;
+    margin: 2px;
+    font-size: 15px;
+    background: black;
+    padding: 2px;
+    color: red;
+}
+.paginado center a:hover{
+    padding: 5px;
+}
+/*----------------------*/

@@ -1,0 +1,290 @@
+*{
+    box-sizing: border-box;
+}
+
+/*PARA CENTRAR TODOS LOS ELEMENTOS Y DIV*/
+.contenedor_header {
+    width: 100%;
+    margin: auto;
+    
+    background: rgba(10,20,29,0.9);
+    position: relative;
+    
+    z-index: 10000;
+}
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+    /*background: #66DD29; /*#3F423F*/
+    background-image:url(../img/margaret-8040217.jpg);
+}
+
+.logo {
+    color: white;
+    margin-left: 10px;
+}
+
+.logo img {
+    width: 140px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: rgba(0,0,0,0.1);
+    height: 70px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.nav__menu {
+   position: absolute;
+    margin-top: 70px;
+    width: 100%;
+    background: #000;
+    /*border: 2px solid orangered;*/
+}
+
+.ul__menu{
+    list-style: none;
+    margin-top: -380px;
+   transition: .4s;
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+    padding-left: 0;
+}
+.mostrar {
+    margin-top: 0;
+    z-index: 100;
+}
+
+/*PARA EL MENU PEGAJOSO*/
+.fixed {
+    position: fixed;
+    width: 80%;
+    margin-top: 0;
+    transform: translateX(12%);
+    transition: all 0.3s;
+    background: rgba(10,20,29,0.9);
+}
+
+/*CONTENEDOR DEL BTN_MENU*/
+.contacto, .contenedor__btn__menu {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+}
+
+.contacto {
+    background: white;
+    color: black;
+    font-size: 1em;
+    padding: 7px;
+    border-radius: 10px;
+}
+.contacto a{
+    text-decoration: none;
+    color: black;
+}
+.contacto a:hover{
+    transform: scale(110%);
+}
+
+.ul__menu .li {
+    margin-bottom: 20px;
+}
+
+.li .ul_submenu {
+    color: white;
+    list-style: none;
+    padding-left: 0px;
+    height: 0;
+    overflow:hidden;
+    transition: all 0.3s;
+    margin-top: 15px;
+}
+
+.submenu_dos .ul_submenu .li_submenu {
+    margin-bottom: 15px;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.submenu .ul_submenu .li_submenu {
+    text-align: left;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.label__btn__menu {
+    color: black;
+    background: white;
+    cursor: pointer;
+    padding: 10px 10px 7px;
+    font-size: 1.5em;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.input__btn__menu {
+    display: none;
+}
+
+.li {
+    
+    margin: 10px;
+}
+
+.ul__menu .li a:hover {
+    color: orangered;
+}
+
+.li a{
+    text-decoration: none;
+    color: aliceblue;
+    width: 20%;
+}
+
+@media screen and (min-width:1024px) {
+
+    .header {
+        transition: all 0.5s;
+    }
+    
+.nav__menu {
+   position: relative;
+    
+    margin-top: 0px;
+    width: 50%;
+    background: rgba(0,0,0,0.1);
+   
+    z-index: 1000;
+}
+
+.ul__menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    margin: auto;
+    height: 70px;
+}    
+/*PARA EL MENU PEGAJOSO*/
+.fixed {
+    /*position: fixed;
+    width: 80%;*/
+    margin-top: 10px;
+    /*transition: all 0.5s;*/
+    background: rgba(10,20,29,0.9);
+    border-radius: 15px;
+}
+    
+    /*----------Flecha---------*/
+.submenu .contenedor_flecha {
+    width: 100%;
+    max-width: 130px;
+    position: absolute;
+    transform: translateY(-100%);
+}
+    
+.submenu:hover .arrow-left {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    left: -0px;
+    display: flex;
+    margin: auto;
+    z-index: 2000;
+    border: transparent solid 15px;
+    border-bottom-color: aliceblue;
+}
+  
+    
+    /*-----------------------*/
+    
+/*-------Flecha del submenu_dos------*/
+.submenu_dos .contenedor_flecha {
+    width: 100%;
+    max-width: 130px;
+    position: absolute;
+    transform: translateY(-100%);
+}
+    
+.submenu_dos:hover .arrow-left {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    left: -5px;
+    display: flex;
+    margin: auto;
+    z-index: 2000;
+    border: transparent solid 15px;
+    border-bottom-color: aliceblue;
+}
+  
+/*--------------------------*/
+    
+    
+.submenu .ul_submenu {
+    background: rgba(10,20,29,0.9);
+   position: absolute;
+    overflow: visible;
+    z-index: 1000;
+    opacity: 0;
+    visibility:hidden; 
+   
+    margin-top: 20px;
+    height: 120px;
+    width: 155px;  
+}
+        
+
+.submenu_dos .ul_submenu {
+    background: rgba(10,20,29,0.9);
+   position: absolute;
+    overflow: visible;
+    z-index: 1000;
+    opacity: 0;
+    visibility:hidden;    
+    
+    margin-left: -30px;
+    margin-top: 20px;
+    height: 80px;
+    width: 120px;  
+} 
+.submenu_dos .ul_submenu .li_submenu {
+    
+}    
+    
+.li:hover .ul_submenu {  
+    opacity: 1;
+    visibility:visible;
+} 
+
+.ul_submenu .li_submenu {
+        margin-top: 10px;    
+    }
+    .ul_submenu .li_submenu a {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .label__btn__menu {
+        display: none;
+    }
+    
+    .contacto {
+        margin-right: 10px;
+    }
+}
+

@@ -1,0 +1,89 @@
+/*ESTILOS DEL MODAL*/
+.modal-header {
+    color: green;
+}
+
+.btn-close {
+    background-color: red;
+}
+
+.container .col-sm-6 {
+    margin-left: 0;
+}
+
+/*ESTILO SELECIONAR IMAGEN*/
+.form-group {
+    margin-top: -5px;
+}
+
+.form-group #img {
+    position: relative;
+    left: 40%;
+    width: 45px;
+}
+
+.form-control-file {
+    display: none;
+}
+
+.contenedor_cambiarfoto {
+    background: brown;
+    border-radius: 5px;
+    
+}
+
+.contenedor_cambiarfoto .label_foto {
+    width: 100%;
+        
+    color: white;
+    cursor: pointer;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+
+@media (min-width:576px){
+    
+    .row_agregar {
+        width: 400px;   
+    }
+    
+   .col-sm-6_agregar {
+       width: 1000px;
+    }
+    
+
+}
+
+@media (min-width:768px){
+    .modal-content {
+        width: 550px;        
+    }
+    .row_agregar {
+        width: 470px;   
+    }
+   
+}
+
+@media (min-width:1024px){
+    .modal-content {
+        width: 650px;        
+    }
+    .row_agregar {
+        width: 570px;   
+    }
+   
+}
+
+@media (min-width:1280px){
+    .modal-content {
+        width: 750px;        
+    }
+    .row_agregar {
+        width: 670px;   
+    }
+   
+}
